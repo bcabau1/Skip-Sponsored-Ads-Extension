@@ -2,5 +2,12 @@
     "name": "Skip Sponsers",
     "description": "Skip in-video creator sponsor ad-rolls",
     "version": "1.0",
-    "manifest_version": 3
+    "manifest_version": 3,
+    "permissions": ["storage"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    }
   }
